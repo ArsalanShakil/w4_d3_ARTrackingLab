@@ -38,7 +38,7 @@ class TrackImgFrag : ArFragment() {
     Session?) {
          val augmentedImageDb = AugmentedImageDatabase(session)
          val assetManager = requireContext().assets
-         listOf("sofa", "corals").forEach {
+         listOf("corals", "chair").forEach {
              val inputStream = assetManager.open("$it.jpg")
              val augmentedImageBitmap =
             BitmapFactory.decodeStream(inputStream)
